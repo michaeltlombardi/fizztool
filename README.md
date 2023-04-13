@@ -13,7 +13,7 @@
 Here is an example invocation of the tool that should succeed:
 
 ```sh
-fizztool.exe --key fizz
+fizztool.exe get --key fizz
 ```
 
 The copyright line is written to stderr, and the JSON object is written to stdout.
@@ -29,7 +29,7 @@ fizztool.exe v1.0.0 (c) 2021 Tailspin Toys, Ltd.
 If you run it from PowerShell, the you see the following output:
 
 ```powershell
-fizztool.exe --key fizz | ConvertFrom-Json
+fizztool.exe get --key fizz | ConvertFrom-Json
 ```
 
 ```Output
@@ -45,7 +45,7 @@ buzz
 Here is an example invocation of the tool that should fail:
 
 ```sh
-fizztool.exe --key buzz
+fizztool.exe get --key buzz
 ```
 
 ```Output
@@ -56,7 +56,7 @@ ERROR: Key not found: buzz
 If you run it from PowerShell, then you see the following output:
 
 ```powershell
-fizztool.exe --key buzz | ConvertFrom-Json
+fizztool.exe get --key buzz | ConvertFrom-Json
 ```
 
 ```Output
