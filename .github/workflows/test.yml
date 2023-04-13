@@ -8,9 +8,12 @@ permissions:
   contents: write
   # packages: write
   # issues: write
+defaults:
+  run:
+    shell: pwsh
 
 jobs:
-  test:
+  acceptance:
     strategy:
       matrix:
         os:
@@ -21,5 +24,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v4
+      - uses: goreleaser/goreleaser-action@v4
+        with:
+          install-only: true
       - run: |
-          ./build.ps1 -Target Test
+          ./build.ps1 -Target Test -ErrorAction Stop
