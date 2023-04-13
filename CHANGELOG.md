@@ -13,6 +13,19 @@ For releases before `1.0.0`, this project uses the following convention:
 
 ## Unreleased
 
+Relevant Links:
+
+- [Addressed Issues][vNext-issues]
+- [Merged Pull Requests][vNext-pulls]
+
+## v1.0.0 - 2023-04-14
+
+Relevant Links:
+
+- [GitHub Release][v1.0.0-release]
+- [Addressed Issues][v1.0.0-issues]
+- [Merged Pull Requests][v1.0.0-pulls]
+
 ### Changed
 
 - Replaced using the root command with using subcommands. You can't call `fizztool --key fizz` and
@@ -42,7 +55,7 @@ For releases before `1.0.0`, this project uses the following convention:
 ## v0.1.0 - 2023-04-11
 
 Relevant Links
-: [GitHub Release][v0.1.0]
+: [GitHub Release][v0.1.0-release]
 
 ### Added
 
@@ -51,5 +64,11 @@ Relevant Links
 <!-- Reference Links -->
 [01]: https://keepachangelog.com/en/1.0.0/
 [02]: https://semver.org/spec/v2.0.0.html
+<!-- Unreleased Links -->
+[vNext-issues]: https://github.com/michaeltlombardi/fizztool/issues?q=is%3Aissue+milestone%3AvNext+is%3Aclosed
+[vNext-pulls]:  https://github.com/michaeltlombardi/fizztool/pulls?q=is%3Apr+milestone%3AvNext+is%3Aclosed
 <!-- Release Links -->
-[v0.1.0]: https://github.com/michaeltlombardi/fizztool/releases/tag/v0.1.0
+[v0.1.0-release]: https://github.com/michaeltlombardi/fizztool/releases/tag/v0.1.0
+[v1.0.0-release]: https://github.com/michaeltlombardi/fizztool/releases/tag/v1.0.0
+[v1.0.0-issues]:  https://github.com/michaeltlombardi/fizztool/issues?q=is%3Aissue+milestone%3Av1.0.0+is%3Aclosed
+[v1.0.0-pulls]:   https://github.com/michaeltlombardi/fizztool/pulls?q=is%3Apr+milestone%3Av1.0.0+is%3Aclosed
