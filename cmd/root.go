@@ -305,7 +305,7 @@ func getReleaseNotesURL(version string) string {
 	}
 
 	url := fmt.Sprintf(
-		"%s/releases/tag/%s",
+		"%s/releases/tag/v%s",
 		base_url,
 		strings.TrimPrefix(version, "v"),
 	)

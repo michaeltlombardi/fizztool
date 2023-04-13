@@ -27,5 +27,16 @@ jobs:
       - uses: goreleaser/goreleaser-action@v4
         with:
           install-only: true
-      - run: |
+      - name: Build and Test
+        run: |
           ./build.ps1 -Target Test -ErrorAction Stop
+      - name: Show `version` output
+        run: |
+          $fizztool = Get-Command "./dist/fizztool*/fizztool*" -ErrorAction Stop
+          & $fizztool version
+          & $fizztool version | ConvertFrom-Json
+      - name: Show `get` output
+        run: |
+          $fizztool = Get-Command "./dist/fizztool*/fizztool*" -ErrorAction Stop
+          & $fizztool get --key fizz
+          & $fizztool get --key fizz | ConvertFrom-Json
